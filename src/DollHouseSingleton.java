@@ -7,10 +7,10 @@ public class DollHouseSingleton {
     this.navn = "Dukkehuset i Århus";
   }
 
-  public  DollHouseSingleton getInstance() {
-    if (this.instance==null) {
+  public static DollHouseSingleton getInstance() {
+    if (DollHouseSingleton.instance == null) {
       DollHouseSingleton instance = new DollHouseSingleton();
     }
-  return this.instance;
+    return DollHouseSingleton.instance;
   }
 }
